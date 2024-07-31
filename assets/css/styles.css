@@ -1,0 +1,142 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFCFC;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+}
+
+@media(min-width: 992px) {
+    .navbar .navbar-brand img {
+        width: 78%;
+        height: auto
+    };
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.navbar-toggler-icon {
+    font-size: 2.5rem;
+    color: #0a0a0a;
+    padding: 5px;
+}
+
+.navbar .navbar-nav .nav-item {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media(min-width: 992px) {
+    .navbar .navbar-nav .nav-item {
+        font-size: 1.750rem;
+    }
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 3px;
+    background-color: #FF7043;
+    max-width: 100%;
+    color: #333333;
+    height: 3px;
+} 
+/* Final da Navbar */
+
+/* Header */
+.azul {
+    color: #708090;
+}
+
+.laranja {
+    color: #FF7043;
+}
+
+#header h1 {
+    font-size: 6.3rem;
+    color: #5F9EA0;
+    font-family: 'Forum', serif;
+    margin-top: 90px;
+}
+
+#header #devDesc {
+    font-size: 2.5rem;
+    color: #333333;
+    
+}
+
+@media(min-width: 992px) {
+    #header h1 {
+        font-size: 8.3rem;
+        margin-top: 220px;
+    }
+    
+    #header #devDesc {
+        font-size: 1rem;
+        color: #333333;
+        font-size: 2.5rem;
+        max-width: 21ch;
+    }
+}
+
+#header a {
+    background-color: #FF7043;
+    padding: 10px 50px;
+    text-decoration: none;
+    border: 3px solid #FF7043;
+    font-size: 2.15rem;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+#header a:hover{
+    background-color: #fff;
+    border: 3px solid #FF7043;
+    color: #FF7043;
+}
+
+@media (min-width: 992px) {
+    .container-img::before {
+        content: "";
+        display: block;
+        background-image: url(../img/ROME.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        background-size: contain;
+        width: 590px;
+        height: 100%;
+        top: 50px;
+    }
+}
