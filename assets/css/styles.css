@@ -48,6 +48,7 @@ body {
     font-size: 2.5rem;
     color: #0a0a0a;
     padding: 5px;
+    transition: all .4s;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -98,7 +99,6 @@ body {
 .laranja:hover {
     color: #708090;
 }
-
 
 #header h1 {
     font-size: 6.3rem;
@@ -168,7 +168,7 @@ body {
         background-size: contain;
         width: 590px;
         height: 100%;
-        top: 50px;
+        top: 120px;
     }
 
     #header .texto-img-imperador {
@@ -191,15 +191,132 @@ body {
     }
 }
 /* Main */
-main #sobre .titulo-section {
-    font-size: 4rem;
+main .titulo-section {
+    font-size: 4.4rem;
     color:#5F9EA0;
     text-transform: uppercase;
     font-family: 'Forum', serif;
 }
 
+@media(min-width: 992px) {
+    main .titulo-section {
+        font-size: 5.8rem; 
+    }
+}
+
 /* Sobre */
+main #sobre .titulo-section {
+    text-align: center;
+}
 
 main #sobre {
-    margin-top: 93px;
+    margin-top: 90px;
+}
+
+#sobre {
+    display: block;
+}
+
+#sobre p {
+    font-size: 1.8rem;
+}
+
+#segundoTexto {
+    text-align: start;
+}
+
+
+@media (min-width: 992px) {
+    main #sobre {
+        margin-top: 150px;
+    }
+
+    #sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #sobre .titulo-section {
+        grid-column: 1 / 5 ;
+    }
+    
+    #primeiroTexto {
+        grid-column: 2 / 5;
+        position: relative;
+    }
+
+    #segundoTexto {
+        grid-column: 1 / 4;
+        position: relative;
+        text-align: right;
+    }
+
+    main #sobre .titulo-section {
+        text-align: start;
+    }
+
+    #primeiroTexto::before {
+        content: "";
+        display: block;
+        background: url(../img/seta-sobre-1.png) center center no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: 100%;   
+        top: 0;
+        right: 500px;
+    }
+
+    #segundoTexto::before {
+        content: "";
+        display: block;
+        background: url(../img/seta-sobre-2.png) center center no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: 100%;   
+        left: 450px;
+        bottom: 50px;
+    }
+}
+
+@media(min-width: 1200px) {
+    #segundoTexto::before {
+        left: 500px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #primeiroTexto::before {
+        right: 600px;
+    }
+
+    #segundoTexto::before {
+        left: 580px;
+        bottom: 20px;
+    }
+}
+
+/* Portfolio */
+
+#portfolio {
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+
+#portfolio h2 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #portfolio h2 {
+        grid-column: 3;
+        text-align: start;
+    }
 }
