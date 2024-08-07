@@ -11,7 +11,6 @@ html {
 body {
     background-color: #FCFCFC;
     font-family: 'Fira Sans', sans-serif;
-    height: 2000px;
 }
 
 /* Navbar */
@@ -168,7 +167,7 @@ body {
         background-size: contain;
         width: 590px;
         height: 100%;
-        top: 120px;
+        top: 50px;
     }
 
     #header .texto-img-imperador {
@@ -191,7 +190,7 @@ body {
     }
 }
 /* Main */
-main .titulo-section {
+.titulo-section {
     font-size: 4.4rem;
     color:#5F9EA0;
     text-transform: uppercase;
@@ -228,7 +227,7 @@ main #sobre {
 
 @media (min-width: 992px) {
     main #sobre {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     #sobre {
@@ -253,6 +252,10 @@ main #sobre {
 
     main #sobre .titulo-section {
         text-align: start;
+    }
+
+    #sobre p {
+        font-size: 2rem;
     }
 
     #primeiroTexto::before {
@@ -309,6 +312,13 @@ main #sobre {
     text-align: center;
 }
 
+#portfolio .text-portfolio {
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    color: #333333;
+}
+
 @media (min-width: 992px) {
     #portfolio {
         display: grid;
@@ -319,4 +329,55 @@ main #sobre {
         grid-column: 3;
         text-align: start;
     }
+
+    #portfolio .text-portfolio {
+        font-size: 2.2rem;
+        grid-column: 3;
+    }
 }
+
+
+#contato {
+    margin-top: 90px;
+}
+
+#contato h2 {
+    text-align: center;
+}
+
+#contato p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333;
+}
+
+#contato a {
+    text-decoration: none;
+    border: 0;
+}
+
+#contato a i {
+    font-size: 3.6rem;
+    color: #5F9EA0;
+    transition: .4s;
+}
+
+#contato a i:hover {
+    color: #FF7043;
+}
+
+@media(min-width: 992px) {
+
+    #contato h2 {
+        font-size: 5.8rem;
+    }
+
+    #contato {
+        margin-top: 110px;
+    }
+    
+    #contato p {
+        font-size: 2.2rem;
+    }
+}
+

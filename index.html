@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augusto - Desenvolvedor</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Fira Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Forum -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="" class="navbar-brand" href="./"><img src="./assets/img/logo.png" alt="Augusto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-                <i class="bi bi-list" id="menuMobile"  onclick="changeIcon(this)"></i>
+                <i class="bi bi-list" id="menuMobile" onclick="changeIcon(this)"></i>
             </button>
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <ul class="navbar-nav ms-auto">
@@ -48,18 +55,22 @@
             <div class="row">
                 <div class="col-12 col-md-5">
                     <h1 class="text-center">Augusto</h1>
-                    <p id="devDesc" class="text-center">Desenvolvedor <span class="azul">Frontend</span> e <span class="azul">UX/UI</span> Design</p>
+                    <p id="devDesc" class="text-center">Desenvolvedor <span class="azul">Frontend</span> e <span
+                            class="azul">UX/UI</span> Design</p>
                     <div id="container-button" class="text-center">
                         <a class="btn">Contato</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-7">
                     <div class="d-flex justify-content-center container-img">
-                        <img src="./assets/img/otavio-augusto.png" alt="" class="img-fluid mt-0 mt-lg-5 position-relative">
+                        <img src="./assets/img/otavio-augusto.png" alt=""
+                            class="img-fluid mt-0 mt-lg-5 position-relative">
                     </div>
                     <div class="texto-img-imperador position-absolute">
-                        <p class="text-center text-md-start">Não esse <span class="azul">Augusto</span><span class="laranja fs-1 d-inline-block ms-1">.</span></p>
-                        <p class="text-center text-md-start">Augusto - <span class="laranja">Imperador</span> de Roma</p>
+                        <p class="text-center text-md-start">Não esse <span class="azul">Augusto</span><span
+                                class="laranja fs-1 d-inline-block ms-1">.</span></p>
+                        <p class="text-center text-md-start">Augusto - <span class="laranja">Imperador</span> de Roma
+                        </p>
                     </div>
                 </div>
             </div>
@@ -68,15 +79,57 @@
     <main>
         <section id="sobre" class="container">
             <h2 class="titulo-section pt-5">Sobre<span class="laranja d-inline-block ms-1">.</span></h2>
-            <p id="primeiroTexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui dui, aliquam et ultricies ut, facilisis eget urna. Nam viverra, orci a tempus venenatis, quam massa ultricies eros, sit amet hendrerit tellus enim at lacus. Duis et rhoncus risus. Nullam urna metus, dictum in mollis vehicula, sollicitudin nec urna. Donec dictum laoreet dignissim.</p>
-            <p id="segundoTexto" class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui dui, aliquam et ultricies ut, facilisis eget urna. Nam viverra, orci a tempus venenatis, quam massa ultricies eros, sit amet hendrerit tellus enim at lacus. Duis et rhoncus risus. Nullam urna metus, dictum in mollis vehicula, sollicitudin nec urna. Donec dictum laoreet dignissim.</p>
+            <p id="primeiroTexto">
+                Meu nome é Augusto e sou desenvolvedor front-end especializado em UI/UX Design. Minha paixão por criar interfaces intuitivas e agradáveis me levou a mergulhar no mundo do design, onde busco sempre entregar experiências excepcionais aos usuários. Além do trabalho, gosto de manter um equilíbrio saudável entre a vida profissional e pessoal.</p>
+            <p id="segundoTexto" class="mt-5">Nas horas vagas, adoro estudar sobre as inúmeras possibilidades na área da programação, sempre buscando me atualizar e expandir meus conhecimentos. Também sou fã de video games, que considero uma ótima desculpa para "testar a experiência do usuário" de um jeito bem divertido. Essas atividades me ajudam a manter a criatividade e a motivação, refletindo positivamente na qualidade do meu trabalho.</p>
         </section>
         <section id="portfolio" class="container">
             <h2 class="titulo-section pt-5">Portfólio<span class="laranja d-inline-block ms-1">.</span></h2>
+            <p class="text-portfolio">Em desenvolvimento<span class="laranja">...</span></p>
+            <!-- <div class="container-list-portfolio">
+                <ul class="animais-lista">
+                    <li>
+                        <img src="#">
+                    </li>
+                    <li>
+                        <img src="#">
+                    </li>
+                    <li>
+                        <img src="#">
+                    </li>
+                    <li>
+                        <img src="#">
+                    </li>
+                    <li>
+                        <img src="#">
+                    </li>
+                    <li>
+                        <img src="#">
+                    </li>
+                </ul>
+            </div> -->
         </section>
     </main>
     <footer id="contato">
-
+        <div class="container">
+            <h2 class="titulo-section">Entre em contato<span class="laranja ms-1 fw-bolder">.</span></h2>
+            <p>Pronto para transformar ideias em realidade? Envie uma mensagem e vamos começar!</p>
+            <div class="container-redes-sociais text-center py-5">
+                <a href="">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-linkedin ps-5"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-instagram ps-5"></i>
+                </a>
+            </div>
+            <div class="container-direitos">
+                <p class="fs-2">Desenvolvido com  <i class="bi bi-suit-heart-fill text-danger"></i> por <span class="laranja">Augusto</span>.</p>
+                <p class="fs-3">Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 
 
@@ -84,8 +137,11 @@
 
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
