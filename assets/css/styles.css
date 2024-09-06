@@ -92,29 +92,13 @@ body {
 .navbar .navbar-nav .nav-item a{
     font-size: 1.75rem;
     font-weight: bold;
-    color: #1d1d1d !important;
+    color: #1d1d1d;
+    transition: .3s;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .navbar .navbar-nav .nav-item a:hover {
-    background: linear-gradient(45deg, #FF7043, #fdc1af);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@media(min-width: 992px) {
-    .navbar .navbar-nav .nav-item a{
-        font-size: 1.75rem;
-        font-weight: bold;
-        color: #1d1d1d !important;
-    }
-
-    .navbar .navbar-nav .nav-item a:hover {
-        background: linear-gradient(45deg, #FF7043, #fdc1af);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: gradientAnimation;
-    }
+    color: #FF7043;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -196,7 +180,7 @@ body {
     color: #fff;
     margin-top: 20px;
     font-weight: 600;
-    transition: .4s;
+    transition: .3s;
     text-align: center;
 }
 
@@ -455,7 +439,7 @@ main #sobre {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #FF7043, #FFAB00);
+    background: #FF7043;
     text-align: center;
     align-content: center;
 }
@@ -555,7 +539,7 @@ main #sobre {
 #contato a i {
     font-size: 3.6rem;
     color: #708090;
-    transition: .4s;
+    transition: .4s ease-in-out;
 }
 
 #contato a i:hover {
