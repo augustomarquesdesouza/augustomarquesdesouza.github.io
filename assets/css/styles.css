@@ -14,7 +14,7 @@ body {
     background-size: cover;
 }
 
-*::selection {
+::selection {
     background-color: #FF7043 !important;
     color: #fff; 
 }
@@ -465,6 +465,11 @@ main #sobre {
     margin: 10px 10px;
     display: inline-block;
     transition: .3s;
+}
+
+.orbit-card-content>div a:hover {
+    background-color: #fff ;
+    color: #FF7043;
 }
 
 
