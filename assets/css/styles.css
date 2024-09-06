@@ -14,6 +14,11 @@ body {
     background-size: cover;
 }
 
+*::selection {
+    background-color: #FF7043 !important;
+    color: #fff; 
+}
+
 /* Navbar */
 .navbar .navbar-brand {
     color: #1d1d1d;
@@ -206,9 +211,9 @@ body {
         background-position: center;
         position: absolute;
         background-size: contain;
-        width: 764px;
-        height: 965px;
-        top: -130px;
+        width: 814px;
+        height: 765px;
+        top: -20px;
     }
 }
 
