@@ -50,7 +50,7 @@ body {
 
 .sus-hamburger-1a2b svg {
   height: 3.5em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sus-line-1a2b {
