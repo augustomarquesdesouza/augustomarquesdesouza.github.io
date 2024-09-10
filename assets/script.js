@@ -24,6 +24,6 @@ function initAnimaScroll() {
 initAnimaScroll();
 //Animação Máquina de escrever
 new TypeIt("#element", {
-    speed: 80,
-    startDelay: 0
-  }).go();
+    speed: 60,
+    waitUntilVisible: true,
+}).go();
