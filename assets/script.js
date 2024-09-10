@@ -25,5 +25,4 @@ initAnimaScroll();
 //Animação Máquina de escrever
 new TypeIt("#element", {
     speed: 60,
-    waitUntilVisible: true,
 }).go();
