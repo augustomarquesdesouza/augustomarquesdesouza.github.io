@@ -1,0 +1,587 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.jpg) top right no-repeat;
+  font-family: "Fira Sans", sans-serif;
+  background-size: cover;
+}
+
+::selection {
+  background-color: #ff7043 !important;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar .navbar-brand {
+  color: #1d1d1d;
+  font-size: 5.5rem;
+  font-family: "Forum", serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ff7043;
+}
+
+.navbar .navbar-brand span {
+  font-size: 5.5rem !important;
+  font-family: "Forum", serif;
+  margin: 0px;
+  padding: 0;
+}
+
+.sus-hamburger-1a2b {
+  cursor: pointer;
+}
+
+.sus-hamburger-1a2b input {
+  display: none;
+}
+
+.sus-hamburger-1a2b svg {
+  height: 3.5em;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sus-line-1a2b {
+    fill: none;
+    stroke: #1d1d1d;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sus-line-top-bottom-1a2b {
+  stroke-dasharray: 12 63;
+}
+
+.sus-hamburger-1a2b input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.sus-hamburger-1a2b input:checked + svg .sus-line-top-bottom-1a2b {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-brand img {
+    width: 88%;
+    height: auto;
+    color: #1d1d1d;
+  }
+
+  .navbar .navbar-brand {
+    color: #1d1d1d;
+    font-size: 6.8rem;
+    font-family: "Forum", serif;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-brand:hover {
+    color: #ff7043;
+  }
+
+  .navbar .navbar-brand span {
+    font-size: 7.5rem !important;
+    font-family: "Forum", serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navbar .navbar-toggler {
+  border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar .navbar-nav .nav-item a {
+  font-size: 2.1rem;
+  font-weight: semi-bold;
+  color: #1d1d1d;
+  transition: 0.3s;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+  color: #ff7043;
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 3px;
+  background-color: #ff7043;
+  max-width: 100%;
+  color: #333333;
+  height: 3px;
+}
+/* Final da Navbar */
+
+/* Header */
+.azul {
+  color: #708090;
+  transition: 0.4s;
+}
+
+.azul:hover {
+  color: #ff7043;
+}
+
+.laranja {
+  color: #ff7043;
+  transition: 0.4s;
+}
+
+.laranja:hover {
+  color: #708090;
+}
+
+#header h1 {
+  font-size: 6.3rem;
+  color: #1d1d1d;
+  font-family: "Forum", serif;
+  margin-top: 30px;
+}
+
+#header .dev-desc {
+  font-size: 2.1rem;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  #header h1 {
+    font-size: 8.3rem;
+    margin-top: 220px;
+    text-align: left !important;
+  }
+
+  #header .dev-desc {
+    font-size: 1rem;
+    color: #333333;
+    font-size: 2.5rem;
+    max-width: 21ch;
+    text-align: left !important;
+  }
+
+  #header #container-button {
+    text-align: left !important;
+  }
+}
+
+#header .btn {
+  background-color: #ff7043;
+  padding: 10px 50px;
+  text-decoration: none;
+  border: 3px solid #ff7043;
+  font-size: 2.15rem;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-align: center;
+}
+
+#header .btn:hover {
+  background-color: #fff;
+  border: 3px solid #ff7043;
+  color: #ff7043;
+}
+
+#header .texto-img-imperador {
+  font-size: 1.5rem;
+  padding-top: 12px;
+}
+
+@media (min-width: 992px) {
+  #header .texto-img-imperador {
+    position: relative;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-img::before {
+    content: "";
+    display: block;
+    background-image: url(../img/rome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-size: contain;
+    width: 814px;
+    height: 765px;
+    top: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  #header .texto-img-imperador:after {
+    content: "";
+    display: block;
+    background: url(../img/seta.png) center center no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 123px;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+  }
+}
+/* Main */
+.titulo-section {
+  font-size: 4rem;
+  color: #708090;
+  text-transform: uppercase;
+  font-family: "Forum", serif;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  main .titulo-section {
+    font-size: 5.3rem;
+  }
+}
+
+/* Sobre */
+main #sobre .titulo-section {
+  text-align: center;
+}
+
+main #sobre {
+  margin-top: 90px;
+}
+
+#sobre {
+  display: block;
+}
+
+#sobre p {
+  font-size: 1.8rem;
+}
+
+#segundoTexto {
+  text-align: start;
+}
+
+@media (min-width: 992px) {
+  main #sobre {
+    margin-top: 150px;
+  }
+
+  #sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #sobre .titulo-section {
+    grid-column: 1 / 5;
+  }
+
+  #primeiroTexto {
+    grid-column: 2 / 5;
+    position: relative;
+  }
+
+  #segundoTexto {
+    grid-column: 1 / 4;
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  main #sobre .titulo-section {
+    text-align: start;
+  }
+
+  #sobre p {
+    font-size: 2rem;
+  }
+
+  #primeiroTexto::before {
+    content: "";
+    display: block;
+    background: url(../img/seta-sobre-1.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 151px;
+    height: 148px;
+    top: 0;
+    left: -200px;
+  }
+
+  #segundoTexto::before {
+    content: "";
+    display: block;
+    background: url(../img/seta-sobre-2.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 106px;
+    height: 146px;
+    left: 750px;
+    bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #primeiroTexto::before {
+    content: "";
+    display: block;
+    background: url(../img/seta-sobre-1.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 151px;
+    height: 148px;
+    top: 0;
+    left: -200px;
+  }
+
+  #segundoTexto::before {
+    left: 950px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #primeiroTexto::before {
+    left: -200px;
+  }
+
+  #segundoTexto::before {
+    left: 1050px;
+  }
+}
+
+/* Portfolio */
+.carousel-item img {
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.carousel-item h5 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .carousel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+
+  .orbit-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ff7043;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    align-content: center;
+  }
+
+  .carousel:hover .orbit-card-content {
+    transform: rotateX(0deg);
+  }
+
+  .orbit-card-title {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 4rem !important;
+  }
+
+  .orbit-card-content > div a {
+    text-decoration: none;
+    background-color: #1d1d1d;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2rem !important;
+    margin: 10px 10px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+}
+
+.orbit-card-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ff7043;
+  text-align: center;
+  align-content: center;
+}
+
+.carousel:hover .orbit-card-content {
+  transform: rotateX(0deg);
+}
+
+.orbit-card-title {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.orbit-card-content > div a {
+  text-decoration: none;
+  background-color: #1d1d1d;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 10px 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.orbit-card-content > div a:hover {
+  background-color: #fff;
+  color: #ff7043;
+}
+
+#portfolio {
+  display: block;
+  margin-top: 30px;
+  position: relative;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+#portfolio .text-portfolio {
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  color: #333333;
+}
+
+@media (min-width: 992px) {
+  #portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #portfolio h2 {
+    grid-column: 3;
+    text-align: start;
+  }
+
+  #portfolio .text-portfolio {
+    font-size: 2.2rem;
+    grid-column: 3;
+  }
+}
+
+#carouselExample {
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.carousel .carousel-inner {
+  border-radius: 10px;
+}
+
+#contato {
+  margin-top: 60px;
+}
+
+#contato h2 {
+  text-align: center;
+}
+
+#contato p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333333;
+}
+
+#contato a {
+  text-decoration: none;
+  border: 0;
+}
+
+#contato a i {
+  font-size: 3.6rem;
+  color: #708090;
+  transition: 0.4s ease-in-out;
+}
+
+#contato a i:hover {
+  color: #ff7043;
+}
+
+@media (min-width: 992px) {
+  #contato h2 {
+    font-size: 5.8rem;
+  }
+
+  #contato {
+    margin-top: 110px;
+  }
+
+  #contato p {
+    font-size: 2.2rem;
+  }
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
+}
